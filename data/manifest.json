@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "description": "Existing train3404 10853-row dataset exported without re-splitting",
+  "total_rows": 10853,
+  "source_dataset_sha256": "9b2c762154383292d100119616b5c025afc8ad0d202e92fee57d7abf1f7dd56a",
+  "source_checkpoint_sha256": "7e797342f8bc3d7da659644cce035d02ecc86a8f9dce0993fec09c878fb80d5e",
+  "source_protocol_sha256": "ef770bf16cb93c8a423dab2e17da210b081d2a451136692fd65e03af5c68725e",
+  "selection_bias_from_preprocessing": false,
+  "architecture": {
+    "enhancer_residual": true,
+    "context_residual": true,
+    "wider": true,
+    "csan_balance": true
+  },
+  "raw_keys_and_sample_shapes": {
+    "construction": [
+      6,
+      30
+    ],
+    "surrounding rock": [
+      5
+    ],
+    "mwd": [
+      7,
+      75,
+      9
+    ],
+    "out": [
+      9
+    ]
+  },
+  "target_columns_in_out": {
+    "ROP": 1,
+    "RS": 7
+  },
+  "active_input_columns_in_out": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "splits": {
+    "train": {
+      "file": "train.pt.gz",
+      "rows": 5366,
+      "bytes": 1668298,
+      "sha256": "e9875bf9dfa7c1f915c04d43f84b09edfa83ca3e4b6ed6609f21c5aeac289f43",
+      "source_rows_file": "train_source_rows.csv",
+      "source_rows_sha256": "1ddf31d1b32089a88bbc85ce2433dad0157e5a492dfc45d05023e9aa8dd053b1"
+    },
+    "validation": {
+      "file": "validation.pt.gz",
+      "rows": 1686,
+      "bytes": 489663,
+      "sha256": "d1d29b2a39214f453543bac709be2ce6c3978bc97f8fbab755616d83b528b2ac",
+      "source_rows_file": "validation_source_rows.csv",
+      "source_rows_sha256": "ef2f8e994d1327e0f9818327809d3365cf13676e3ebe5bb0039e71e033cc88b8"
+    },
+    "test": {
+      "file": "test.pt.gz",
+      "rows": 3801,
+      "bytes": 1060262,
+      "sha256": "105f557738bf7f9ef7a9a3756983ea5763d0a98cfef325352f807a4afc9a860c",
+      "source_rows_file": "test_source_rows.csv",
+      "source_rows_sha256": "1214895176aebe4b71018e1270b9e718c1a7150bf6dc2e9b7c9bfa277d5a6fa4"
+    }
+  }
+}
